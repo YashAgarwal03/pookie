@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Do You Love Me Yash Agarwal?</h1>
+<p>I am all yours.</p>
+<img src="{{ url_for('static', filename='love_you.gif') }}" alt="Love GIF" class="gif">
+<div>
+    <a href="{{ url_for('love') }}" class="btn">Yes</a>
+    <a href="{{ url_for('think_again') }}" class="btn">No</a>
+</div>
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Please Think Again!</h1>
+<p>Itna jaldi mat bolo.</p>
+<img src="{{ url_for('static', filename='think_again.gif') }}" alt="Think Again GIF" class="gif">
+<div>
+    <a href="{{ url_for('love') }}" class="btn">Yes</a>
+    <a href="{{ url_for('why') }}" class="btn">No</a>
+</div>
+{% endblock %}
